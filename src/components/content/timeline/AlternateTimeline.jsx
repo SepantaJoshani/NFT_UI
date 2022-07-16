@@ -7,42 +7,47 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import styled from "@emotion/styled";
 import { css } from "@emotion/react";
-import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { timelineData } from "../../../../data";
 import { Typography } from "@mui/material";
 
 export default function AlternateTimeline() {
-  const theme = useTheme();
   const smDown = useMediaQuery("(max-width:640px)");
   const lgDown = useMediaQuery("(max-width:1024px)");
 
   return (
-    <StyledTimeline position={smDown ? "right" : "alternate"}>
-      {timelineData.map(({ id, text }, index) => (
-        <StyledTimeLineItem key={id}>
-          <TimelineSeparator>
-            <StyledDot>
-              <Typography fontSize="1.6rem" color="white">
-                {index + 1}
+    <>
+      <Typography variant="h2" fontWeight="bold" textAlign="center">
+        ROAD MAP
+      </Typography>
+
+      <StyledTimeline position={smDown ? "right" : "alternate"}>
+        {timelineData.map(({ id, text }, index) => (
+          <StyledTimeLineItem key={id}>
+            <TimelineSeparator>
+              <StyledDot>
+                <Typography fontSize="1.6rem" color="white">
+                  {index + 1}
+                </Typography>
+              </StyledDot>
+              <StyledTimelineConnector />
+            </TimelineSeparator>
+            <StyledTimeLineContent isRight={index % 2 !== 0}>
+              <Typography variant="body2" textAlign="left">
+                {lgDown ? text.substring(0, 200) : text.substring(0, 500)}
               </Typography>
-            </StyledDot>
-            <StyledTimelineConnector />
-          </TimelineSeparator>
-          <StyledTimeLineContent isRight={index % 2 !== 0}>
-            <Typography variant="body2" textAlign="left">
-              {lgDown ? text.substring(0, 200) : text.substring(0, 400)}
-            </Typography>
-          </StyledTimeLineContent>
-        </StyledTimeLineItem>
-      ))}
-    </StyledTimeline>
+            </StyledTimeLineContent>
+          </StyledTimeLineItem>
+        ))}
+      </StyledTimeline>
+    </>
   );
 }
 
 const StyledTimeline = styled(Timeline)`
   ${(p) => p.theme.breakpoints.down("sm")} {
-    .MuiTimelineItem-root {
+    &.MuiTimeline-root {
+      padding: 6px 0;
     }
     .MuiTimelineItem-root::before {
       flex: 0;
