@@ -9,6 +9,7 @@ const Header = () => {
 export default Header;
 
 const StyledHeader = styled.header`
+  color: #fff;
   ${maxWidth}
   ${paddingWrapper}
 `;

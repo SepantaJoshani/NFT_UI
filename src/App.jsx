@@ -1,4 +1,4 @@
-import { Button, CssBaseline } from "@mui/material";
+import { Box, Button, CssBaseline } from "@mui/material";
 import styled from "@emotion/styled";
 
 import React from "react";
@@ -11,9 +11,17 @@ const App = () => {
       <CssBaseline />
       <div>App</div>
       <Button variant="contained">HI</Button>
-      <AlternateTimeline />
+      <TimeLineWrapper>
+        <AlternateTimeline />
+      </TimeLineWrapper>
     </Layout>
   );
 };
 
 export default App;
+
+const TimeLineWrapper = styled(Box)`
+  ${(p) => p.theme.breakpoints.up("md")} {
+    padding: 0 10rem;
+  }
+`;

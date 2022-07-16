@@ -4,13 +4,19 @@ import { green, purple } from "@mui/material/colors";
 const theme = createTheme({
   palette: {
     background: {
-      //   default: "#000",
+      default: "#000",
     },
     primary: {
       main: purple[500],
     },
     secondary: {
       main: green[500],
+    },
+  },
+  typography: {
+    body2: {
+      fontSize: "0.75rem",
+      color: "#fff",
     },
   },
 
