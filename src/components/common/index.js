@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 
 export const maxWidth = css`
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
 `;
 

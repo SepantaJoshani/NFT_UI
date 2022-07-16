@@ -14,8 +14,8 @@ import { Typography } from "@mui/material";
 
 export default function AlternateTimeline() {
   const theme = useTheme();
-  const smDown = useMediaQuery('(max-width:640px)');
-  const lgDown = useMediaQuery('(max-width:1024px)');
+  const smDown = useMediaQuery("(max-width:640px)");
+  const lgDown = useMediaQuery("(max-width:1024px)");
 
   return (
     <StyledTimeline position={smDown ? "right" : "alternate"}>
@@ -64,8 +64,7 @@ const StyledDot = styled(TimelineDot)`
 `;
 
 const StyledTimelineConnector = styled(TimelineConnector)`
-  background-color: transparent;
-  border-left: 4px dotted #fff;
+  background-color: #fff;
 `;
 
 const StyledTimeLineContent = styled(TimelineContent)`
@@ -82,7 +81,7 @@ const StyledTimeLineContent = styled(TimelineContent)`
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: gray;
+      background-color: #545454;
       bottom: 1rem;
       left: 1rem;
       z-index: -1;

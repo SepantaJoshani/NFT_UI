@@ -21,7 +21,7 @@ const App = () => {
 export default App;
 
 const TimeLineWrapper = styled(Box)`
-  ${(p) => p.theme.breakpoints.up("md")} {
+  ${(p) => p.theme.breakpoints.up("lg")} {
     padding: 0 10rem;
   }
 `;
