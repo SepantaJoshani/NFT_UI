@@ -25,7 +25,9 @@ const App = () => {
         <TimeLineWrapper component="section" id="road-map">
           <AlternateTimeline />
         </TimeLineWrapper>
-        <Treasure />
+        <TreasureWrapper>
+          <Treasure />
+        </TreasureWrapper>
         <Team />
         <SomeNft />
         <FaqWrapper id="faq">
@@ -41,6 +43,8 @@ export default App;
 const HeroWrapper = styled.section`
   display: flex;
   position: relative;
+  align-items: center;
+  padding-right: 1rem;
   ::after {
     content: "";
     position: absolute;
@@ -49,7 +53,7 @@ const HeroWrapper = styled.section`
     bottom: 0;
     left: 0;
     z-index: -1;
-    background-color: gray;
+    background-color: #2c2c2c;
   }
 `;
 
@@ -58,6 +62,7 @@ const StoryWrapper = styled.section`
   background-color: transparent;
   border: 1px solid #fdd54b;
   margin-top: 1rem;
+  border-radius: 15px;
 
   @media (min-width: 768px) {
     margin: 0 auto;
@@ -76,6 +81,10 @@ const TimeLineWrapper = styled(Box)`
     width: 90%;
     margin: 0 auto;
   }
+`;
+
+const TreasureWrapper = styled.section`
+margin-top: 3rem;
 `;
 
 const FaqWrapper = styled.section`
