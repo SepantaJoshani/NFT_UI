@@ -14,7 +14,7 @@ const menuOptions = [
   { id: uuid(), content: "Treasure Map", href: "#treasure-map" },
   { id: uuid(), content: "Mystery", href: "#mystery" },
   { id: uuid(), content: "Term", href: "#term" },
-  { id: uuid(), content: "Faq", href: "faq" },
+  { id: uuid(), content: "Faq", href: "#faq" },
 ];
 
 const IconContainer = () => {

@@ -6,25 +6,52 @@ import AlternateTimeline from "./components/content/timeline/AlternateTimeline";
 import { Layout } from "./components/layout";
 import Story from "./components/content/story/Story";
 import Faq from "./components/content/faq/Faq";
+import Hero from "./components/content/hero/Hero";
+import Treasure from "./components/content/treasure/Treasure";
+import Team from "./components/content/team/Team";
+import SomeNft from "./components/content/nft/SomeNft";
 
 const App = () => {
   return (
-    <Layout>
+    <>
       <CssBaseline />
-      <StoryWrapper>
-        <Story />
-      </StoryWrapper>
-      <TimeLineWrapper component="section">
-        <AlternateTimeline />
-      </TimeLineWrapper>
-      <FaqWrapper>
-        <Faq />
-      </FaqWrapper>
-    </Layout>
+      <Layout>
+        <HeroWrapper id="hero">
+          <Hero />
+        </HeroWrapper>
+        <StoryWrapper id="story">
+          <Story />
+        </StoryWrapper>
+        <TimeLineWrapper component="section" id="road-map">
+          <AlternateTimeline />
+        </TimeLineWrapper>
+        <Treasure />
+        <Team />
+        <SomeNft />
+        <FaqWrapper id="faq">
+          <Faq />
+        </FaqWrapper>
+      </Layout>
+    </>
   );
 };
 
 export default App;
+
+const HeroWrapper = styled.section`
+  display: flex;
+  position: relative;
+  ::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: gray;
+  }
+`;
 
 const StoryWrapper = styled.section`
   padding: 1rem 1.5rem;
@@ -45,13 +72,6 @@ const StoryWrapper = styled.section`
 
 const TimeLineWrapper = styled(Box)`
   margin-top: 1.5rem;
-  /* ${(p) => p.theme.breakpoints.up("lg")} {
-    margin-top: 1.5rem;
-    padding: 0 10rem;
-  }
-  ${(p) => p.theme.breakpoints.up("xl")} {
-    padding: 0 16rem;
-  } */
   @media (min-width: 1024px) {
     width: 90%;
     margin: 0 auto;

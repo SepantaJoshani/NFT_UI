@@ -33,9 +33,19 @@ const theme = createTheme({
   },
 
   components: {
-    MuiCssBaseline: {
+    MuiAccordion: {
       styleOverrides: {
-        backgroundColor: " #000",
+        root: {
+          ":first-of-type": {
+            borderBottomLeftRadius: "20px",
+            borderBottomRightRadius: "20px",
+          },
+
+          ":last-of-type": {
+            borderBottomLeftRadius: "20px",
+            borderBottomRightRadius: "20px",
+          },
+        },
       },
     },
   },
@@ -60,12 +70,11 @@ theme.typography.h2 = {
   },
 };
 theme.typography.body2 = {
-  color:"#fff",
+  color: "#fff",
   fontSize: "0.75rem",
   "@media (min-width:768px)": {
     fontSize: "1rem",
   },
-  
 };
 
 export default theme;
