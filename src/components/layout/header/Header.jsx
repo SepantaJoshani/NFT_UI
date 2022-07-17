@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Twirl as Hamburger } from "hamburger-react";
-import { Hidden } from "@mui/material";
+import { Hidden, SwipeableDrawer } from "@mui/material";
 import React, { useState } from "react";
 import { maxWidth, paddingWrapper } from "../../common";
 import TwitterIcon from "../../../assets/twitter.svg";
@@ -32,27 +32,52 @@ const IconContainer = () => {
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
+
+  const toggleDrawer = (toggle) => (event) => {
+    if (
+      event &&
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
+    ) {
+      return;
+    }
+
+    setOpen(toggle);
+  };
+
   return (
-    <StyledHeader>
-      <Nav>
-        <LeftSide>
-          <Logo src={LogoIcon} />
-          <IconContainer />
-          <MenuList>
-            {menuOptions.map(({ id, href, content }) => (
-              <a key={id} href={href}>
-                {content}
-              </a>
-            ))}
-          </MenuList>
-        </LeftSide>
-        <RightSide>
-          <IconContainer />
-          <CollectBtn>CONNECT TO WALLET</CollectBtn>
-          <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
-        </RightSide>
-      </Nav>
-    </StyledHeader>
+    <>
+      <StyledHeader>
+        <Nav>
+          <LeftSide>
+            <Logo src={LogoIcon} />
+            <IconContainer />
+            <MenuList>
+              {menuOptions.map(({ id, href, content }) => (
+                <a key={id} href={href}>
+                  {content}
+                </a>
+              ))}
+            </MenuList>
+          </LeftSide>
+          <RightSide>
+            <IconContainer />
+            <CollectBtn>CONNECT TO WALLET</CollectBtn>
+            <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
+          </RightSide>
+        </Nav>
+      </StyledHeader>
+
+      <SwipeableDrawer
+       
+        anchor="right"
+        open={isOpen}
+        onClose={toggleDrawer(false)}
+        onOpen={toggleDrawer( true)}
+      >
+        HI
+      </SwipeableDrawer>
+    </>
   );
 };
 

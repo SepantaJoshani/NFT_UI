@@ -84,7 +84,17 @@ const TimeLineWrapper = styled(Box)`
 `;
 
 const TreasureWrapper = styled.section`
-margin-top: 3rem;
+  margin-top: 3rem;
+  .swiper {
+    padding-bottom: 30px;
+  }
+ 
+  .swiper-pagination-bullet-active-next {
+    background: #fff;
+  }
+  .swiper-pagination-bullet-active-main {
+    background: #fdd54b;
+  }
 `;
 
 const FaqWrapper = styled.section`
