@@ -6,7 +6,6 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { timelineData } from "../../../../data";
 import { Typography } from "@mui/material";
