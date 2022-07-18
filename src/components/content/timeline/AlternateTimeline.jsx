@@ -80,13 +80,15 @@ const StyledTimeLineContent = styled(TimelineContent)`
   border-radius: 20px;
   position: relative;
 
+
   ${(p) => p.theme.breakpoints.up("md")} {
+    border: 1px solid #fff;
     ::after {
       content: "";
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #545454;
+      background-color:#2c2c2c;
       bottom: 1rem;
       left: 1rem;
       z-index: -1;

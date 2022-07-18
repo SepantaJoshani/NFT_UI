@@ -1,12 +1,15 @@
 import styled from "@emotion/styled";
 import { Twirl as Hamburger } from "hamburger-react";
-import { Hidden, SwipeableDrawer } from "@mui/material";
-import React, { useState } from "react";
+import { Divider, Hidden, SwipeableDrawer } from "@mui/material";
+import React, { Fragment, useState } from "react";
 import { maxWidth, paddingWrapper } from "../../common";
 import TwitterIcon from "../../../assets/twitter.svg";
 import DiscordIcon from "../../../assets/discord.svg";
 import LogoIcon from "../../../assets/logo.jpg";
 import { uuid } from "../../../../data/uuid";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
 
 const menuOptions = [
   { id: uuid(), content: "Story", href: "#story" },
@@ -36,8 +39,8 @@ const Header = () => {
   const toggleDrawer = (toggle) => (event) => {
     if (
       event &&
-      event.type === 'keydown' &&
-      (event.key === 'Tab' || event.key === 'Shift')
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
     ) {
       return;
     }
@@ -50,7 +53,7 @@ const Header = () => {
       <StyledHeader>
         <Nav>
           <LeftSide>
-            <Logo src={LogoIcon} />
+            <Logo src={LogoIcon} alt="logo brand" />
             <IconContainer />
             <MenuList>
               {menuOptions.map(({ id, href, content }) => (
@@ -69,13 +72,31 @@ const Header = () => {
       </StyledHeader>
 
       <SwipeableDrawer
-       
         anchor="right"
         open={isOpen}
         onClose={toggleDrawer(false)}
-        onOpen={toggleDrawer( true)}
+        onOpen={toggleDrawer(true)}
       >
-        HI
+        <List>
+          {menuOptions.map(({ id, content, href }, index, array) => (
+            <Fragment key={id}>
+              <StyledListItem
+                component="a"
+                href={href}
+                onClick={() => setOpen(false)}
+              >
+                {content}
+              </StyledListItem>
+              {index < array.length - 1 && (
+                <Divider
+                  light
+                  variant="fullWidth"
+                  sx={{ background: "#545454" }}
+                />
+              )}
+            </Fragment>
+          ))}
+        </List>
       </SwipeableDrawer>
     </>
   );
@@ -188,7 +209,20 @@ const MenuList = styled.div`
     color: #ffffff;
 
     @media (min-width: 1280px) {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
+`;
+
+const StyledListItem = styled(ListItem)`
+  cursor: pointer;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  width: 100%;
+  border-radius: 5px;
+  :hover {
+    background-color: #fdd64a;
+    color: #181818;
+  }
+  transition: all .2s ease-in;
 `;

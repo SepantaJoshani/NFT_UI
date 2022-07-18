@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
-import Button from "@mui/material/Button";
 import AVATAR from "../../../assets/heading-avatar.png";
-
 import Plus from "../../../assets/plus-icon.svg";
 import Minus from "../../../assets/minus.svg";
 
@@ -253,6 +251,7 @@ const NumValue = styled.span`
 const MintBtn = styled.button`
   padding: 0 0.8rem;
   background-color: #fdde3d;
+  color: #000;
   border: 0;
   outline: 0;
   border-radius: 6px;
@@ -278,17 +277,4 @@ const MintBtn = styled.button`
   }
 `;
 
-const DiscordBtn = styled(Button)`
-  background-color: #51b4ff;
-  padding: 0 0.5rem;
-  :hover {
-    background-color: #51b4ff;
-  }
-`;
 
-const TwitterBtn = styled(DiscordBtn)`
-  background-color: #6376ff;
-  :hover {
-    background-color: #6376ff;
-  }
-`;

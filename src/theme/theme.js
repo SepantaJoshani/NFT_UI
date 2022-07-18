@@ -48,6 +48,13 @@ const theme = createTheme({
         },
       },
     },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          background: "#2c2c2c",
+        },
+      },
+    },
   },
   breakpoints: {
     values: {

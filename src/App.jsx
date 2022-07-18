@@ -64,10 +64,7 @@ const StoryWrapper = styled.section`
   margin-top: 1rem;
   border-radius: 15px;
 
-  @media (min-width: 768px) {
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
+  
   @media (min-width: 768px) {
     margin: 0 auto;
     margin-top: 2rem;
@@ -80,6 +77,7 @@ const TimeLineWrapper = styled(Box)`
   @media (min-width: 1024px) {
     width: 90%;
     margin: 0 auto;
+    margin-top: 2.5rem;
   }
 `;
 
