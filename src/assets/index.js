@@ -1,0 +1,15 @@
+export { default as DiscordIcon } from "./discord.svg";
+export { default as Avatar } from "./heading-avatar.png";
+export { default as MustachGuy } from "./teams/mustache-guy.jpg";
+export { default as MathGuy } from "./teams/math-guy.jpg";
+export { default as CigaretteGuy } from "./teams/cigarette-guy.jpg";
+export { default as CoolGuy } from "./teams/cool-guy.jpg";
+export { default as OldSherlock } from "./teams/old-sherlock.jpg";
+export { default as GirlWithHat } from "./teams/girl-with-hat.jpg";
+export { default as GirlWithGlasses } from "./teams/girl-with-glasses.jpg";
+export { default as BlondeGuy } from "./nfts/blonde-guy.jpg";
+export { default as Cyborg } from "./nfts/cyborg.jpg";
+export { default as ElfGuy } from "./nfts/elft-guy.jpg";
+export { default as GrayGuy } from "./nfts/gray-guy.jpg";
+export { default as GreenBaseBall } from "./nfts/green-baseball.jpg";
+export { default as HelmetGuy } from "./nfts/helmet-guy.jpg";

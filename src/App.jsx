@@ -28,8 +28,12 @@ const App = () => {
         <TreasureWrapper>
           <Treasure />
         </TreasureWrapper>
-        <Team />
-        <SomeNft />
+        <TeamWrapper>
+          <Team />
+        </TeamWrapper>
+        <NftWrapper>
+          <SomeNft />
+        </NftWrapper>
         <FaqWrapper id="faq">
           <Faq />
         </FaqWrapper>
@@ -64,7 +68,6 @@ const StoryWrapper = styled.section`
   margin-top: 1rem;
   border-radius: 15px;
 
-  
   @media (min-width: 768px) {
     margin: 0 auto;
     margin-top: 2rem;
@@ -73,7 +76,7 @@ const StoryWrapper = styled.section`
 `;
 
 const TimeLineWrapper = styled(Box)`
-  margin-top: 1.5rem;
+  margin-top: 3.5rem;
   @media (min-width: 1024px) {
     width: 90%;
     margin: 0 auto;
@@ -82,11 +85,11 @@ const TimeLineWrapper = styled(Box)`
 `;
 
 const TreasureWrapper = styled.section`
-  margin-top: 3rem;
+ margin-top: 3.5rem;
   .swiper {
     padding-bottom: 30px;
   }
- 
+
   .swiper-pagination-bullet-active-next {
     background: #fff;
   }
@@ -95,11 +98,21 @@ const TreasureWrapper = styled.section`
   }
 `;
 
+const TeamWrapper = styled.section`
+  margin-top: 3.5rem;
+`;
+
+const NftWrapper = styled.section`
+  margin-top: 3.5rem;
+`;
+
 const FaqWrapper = styled.section`
+margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
   width: 100%;
   row-gap: 1rem;
+
 
   @media (min-width: 1024px) {
     width: 90%;

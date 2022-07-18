@@ -32,7 +32,9 @@ export default function AlternateTimeline() {
               </StyledDot>
               <StyledTimelineConnector />
             </TimelineSeparator>
-            <StyledTimeLineContent isRight={index % 2 !== 0}>
+            <StyledTimeLineContent
+              className={index % 2 !== 0 ? "is-right" : "is-left"}
+            >
               <Typography variant="body2" textAlign="left">
                 {lgDown ? text.substring(0, 200) : text.substring(0, 500)}
               </Typography>
@@ -80,7 +82,6 @@ const StyledTimeLineContent = styled(TimelineContent)`
   border-radius: 20px;
   position: relative;
 
-
   ${(p) => p.theme.breakpoints.up("md")} {
     border: 1px solid #fff;
     ::after {
@@ -88,20 +89,18 @@ const StyledTimeLineContent = styled(TimelineContent)`
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color:#2c2c2c;
+      background-color: #2c2c2c;
       bottom: 1rem;
       left: 1rem;
       z-index: -1;
       border-radius: 20px;
     }
-    ${({ isRight }) =>
-      isRight
-        ? css`
-            right: 24px;
-          `
-        : css`
-            left: 8px;
-          `}
+    &.is-right {
+      right: 24px;
+    }
+    &.is-left {
+      left: 8px;
+    }
   }
   ${(p) => p.theme.breakpoints.down("sm")} {
     margin-left: 1rem;
