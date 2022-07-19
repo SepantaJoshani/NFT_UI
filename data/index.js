@@ -15,6 +15,15 @@ import {
   HelmetGuy,
 } from "../src/assets";
 
+export const menuOptions = [
+  { id: uuid(), content: "Story", href: "#story" },
+  { id: uuid(), content: "Road Map", href: "#road-map" },
+  { id: uuid(), content: "Treasure Map", href: "#treasure-map" },
+  { id: uuid(), content: "Mystery", href: "#mystery" },
+  { id: uuid(), content: "Term", href: "#term" },
+  { id: uuid(), content: "Faq", href: "#faq" },
+];
+
 export const lorem =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi,Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit. ";
 export const timelineData = [

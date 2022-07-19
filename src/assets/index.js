@@ -1,5 +1,7 @@
 export { default as DiscordIcon } from "./discord.svg";
 export { default as Avatar } from "./heading-avatar.png";
+export { default as Hat } from "./hat.png";
+export { default as TreasureBox } from "./treasure-box.png";
 export { default as MustachGuy } from "./teams/mustache-guy.jpg";
 export { default as MathGuy } from "./teams/math-guy.jpg";
 export { default as CigaretteGuy } from "./teams/cigarette-guy.jpg";

@@ -1,11 +1,17 @@
-import styled from "@emotion/styled";
 import React from "react";
-import Button from "@mui/material/Button";
-import { maxWidth, paddingWrapper } from "../../common";
 import LogoIcon from "../../../assets/logo.jpg";
 import TwitterIcon from "../../../assets/twitter.svg";
 import DiscordIcon from "../../../assets/discord.svg";
 import { useMediaQuery } from "@mui/material";
+import {
+  BtnCol,
+  ButtonsContainer,
+  DiscordBtn,
+  Logo,
+  SingleCol,
+  StyledFooter,
+  TwitterBtn,
+} from "./Footer.styled";
 
 const Footer = () => {
   const mdUp = useMediaQuery("(min-width:768px)");
@@ -24,7 +30,7 @@ const Footer = () => {
     </>
   );
 
-  const tabletAbove = (
+  const tabletSizeAbove = (
     <>
       <Logo src={LogoIcon} alt="brand" />
       <SingleCol>
@@ -48,71 +54,7 @@ const Footer = () => {
     </>
   );
 
-  return <StyledFooter>{mdUp ? tabletAbove : mobileSize}</StyledFooter>;
+  return <StyledFooter>{mdUp ? tabletSizeAbove : mobileSize}</StyledFooter>;
 };
 
 export default Footer;
-
-const StyledFooter = styled.footer`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  ${paddingWrapper}
-  ${maxWidth}
-  margin: 2.5rem auto;
-
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-`;
-const Logo = styled.img`
-  width: 5rem;
-  height: 5rem;
-
-  @media (min-width: 768px) {
-    width: 7rem;
-    height: 7rem;
-  }
-`;
-
-const ButtonsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5rem;
-  z-index: 2;
-`;
-
-const DiscordBtn = styled(Button)`
-  background-color: #51b4ff;
-  padding: 0 0.5rem;
-  :hover {
-    background-color: #51b4ff;
-  }
-`;
-
-const TwitterBtn = styled(DiscordBtn)`
-  background-color: #6376ff;
-  :hover {
-    background-color: #6376ff;
-  }
-`;
-
-const SingleCol = styled.div`
-  display: flex;
-  flex-direction: column;
-  a {
-    padding: 0.5rem 0;
-    font-size: .8rem;
-  }
-
-  @media (min-width: 1024px) {
-    a{
-      font-size: 1rem;
-    }
-  }
-`;
-const BtnCol = styled.div`
-  display: flex;
-  column-gap: 1rem;
-`;

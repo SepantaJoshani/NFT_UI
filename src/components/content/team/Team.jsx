@@ -1,8 +1,12 @@
-import styled from "@emotion/styled";
-import { Avatar, Card, CardContent, Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
+import styled from "@emotion/styled";
+import Avatar from "@mui/material/Avatar";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography ";
+import Box from "@mui/system/Box";
 import { teamData } from "../../../../data/index";
+
 const Team = () => {
   return (
     <>
@@ -15,6 +19,9 @@ const Team = () => {
             <CardContent>
               <Box sx={{ display: "flex", justifyContent: "center" }}>
                 <Avatar
+                  imgProps={{
+                    loading: "lazy",
+                  }}
                   sx={{
                     minWidth: {
                       xs: "9rem",

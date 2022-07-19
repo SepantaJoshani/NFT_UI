@@ -1,16 +1,15 @@
+import styled from "@emotion/styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import { Navigation, Pagination } from "swiper";
-import styled from "@emotion/styled";
 import { timelineData } from "../../../../data";
 import SingleSlide from "./SingleSlide";
-import { Divider, Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
 import LeftArrow from "../../../assets/left-arrow.svg";
 import RightArrow from "../../../assets/right-arrow.svg";
-import { Box } from "@mui/system";
+import Box from "@mui/system/Box";
 
 const breakpoints = {
   0: {
@@ -21,7 +20,6 @@ const breakpoints = {
     slidesPerView: 3,
     spaceBetween: 30,
   },
-  // when window width is >= 640px
 };
 function Treasure() {
   return (
@@ -37,9 +35,9 @@ function Treasure() {
       <Swiper
         style={{ zIndex: 0 }}
         breakpoints={breakpoints}
-        modules={[Navigation,Pagination]}
+        modules={[Navigation, Pagination]}
         pagination={{
-          dynamicBullets:true
+          dynamicBullets: true,
         }}
         navigation={{
           prevEl: ".left",
