@@ -2,36 +2,11 @@ import React from "react";
 import LogoIcon from "../../../assets/logo.jpg";
 import TwitterIcon from "../../../assets/twitter.svg";
 import DiscordIcon from "../../../assets/discord.svg";
-import { useMediaQuery } from "@mui/material";
-import {
-  BtnCol,
-  ButtonsContainer,
-  DiscordBtn,
-  Logo,
-  SingleCol,
-  StyledFooter,
-  TwitterBtn,
-} from "./Footer.styled";
+import { BtnCol, Logo, SingleCol, StyledFooter } from "./Footer.styled";
 
 const Footer = () => {
-  const mdUp = useMediaQuery("(min-width:768px)");
-
-  const mobileSize = (
-    <>
-      <Logo src={LogoIcon} alt="brand" />
-      <ButtonsContainer>
-        <TwitterBtn>
-          <img src={TwitterIcon} alt="twitter icon" />
-        </TwitterBtn>
-        <DiscordBtn>
-          <img src={DiscordIcon} alt="twitter icon" />
-        </DiscordBtn>
-      </ButtonsContainer>
-    </>
-  );
-
-  const tabletSizeAbove = (
-    <>
+  return (
+    <StyledFooter>
       <Logo src={LogoIcon} alt="brand" />
       <SingleCol>
         <a href="#story">Story</a>
@@ -51,10 +26,8 @@ const Footer = () => {
           <img src={DiscordIcon} alt="twitter icon" />
         </a>
       </BtnCol>
-    </>
+    </StyledFooter>
   );
-
-  return <StyledFooter>{mdUp ? tabletSizeAbove : mobileSize}</StyledFooter>;
 };
 
 export default Footer;

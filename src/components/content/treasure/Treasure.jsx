@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
-import { timelineData } from "../../../../data";
+import { sliderData } from "../../../../data";
 import SingleSlide from "./SingleSlide";
 import Typography from "@mui/material/Typography";
 import LeftArrow from "../../../assets/left-arrow.svg";
@@ -44,7 +44,7 @@ function Treasure() {
           nextEl: ".right",
         }}
       >
-        {timelineData.map(({ text, id }) => (
+        {sliderData.map(({ text, id }) => (
           <SwiperSlide key={id}>
             <SingleSlide content={text} />
           </SwiperSlide>

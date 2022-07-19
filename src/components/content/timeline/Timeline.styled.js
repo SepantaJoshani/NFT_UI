@@ -18,6 +18,7 @@ export const StyledTimeline = styled(Timeline)`
 `;
 export const StyledTimeLineItem = styled(TimelineItem)`
   margin-top: 1.5rem;
+  min-height: 6.7rem;
 `;
 
 export const StyledDot = styled(TimelineDot)`

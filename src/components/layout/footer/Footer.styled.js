@@ -16,8 +16,8 @@ margin: 2.5rem auto;
   }
 `;
 export const Logo = styled.img`
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
 
   @media (min-width: 768px) {
     width: 7rem;
@@ -52,7 +52,7 @@ export const SingleCol = styled.div`
   flex-direction: column;
   a {
     padding: 0.5rem 0;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
   }
 
   @media (min-width: 1024px) {
@@ -64,4 +64,9 @@ export const SingleCol = styled.div`
 export const BtnCol = styled.div`
   display: flex;
   column-gap: 1rem;
+img{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 `;

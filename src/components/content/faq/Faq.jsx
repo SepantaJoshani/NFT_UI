@@ -38,7 +38,6 @@ const Faq = () => {
             id="panel1a-header"
           >
             <Typography variant="body2">
-              {" "}
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Typography>
           </AccordionSummary>

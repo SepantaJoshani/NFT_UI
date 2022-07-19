@@ -81,7 +81,7 @@ export const TreasureWrapper = styled.div`
   width: 4.5rem;
   height: 4.5rem;
   position: absolute;
-  right: -1rem;
+  right: -1.5rem;
   bottom: -1.8rem;
 
   @media (min-width: 768px) {
@@ -122,14 +122,8 @@ export const HatWrapper = styled.div`
     height: 5.5rem;
   }
 
-  @media (min-width: 1024px) {
-    width: 6.5rem;
-    height: 6.5rem;
-  }
-  @media (min-width: 1280px) {
-    width: 7.5rem;
-    height: 7.5rem;
-  }
+  
+ 
   @media (max-width: 374px) {
     display: none;
   }

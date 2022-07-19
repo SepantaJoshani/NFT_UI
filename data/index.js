@@ -28,32 +28,79 @@ export const lorem =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi,Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit. ";
 export const timelineData = [
   {
-    id: 1,
-    text: lorem,
+    id: uuid(),
+    text: "%10 of net profit from BROTHERHOOD project mint is donated to cancer patients all over the world. ",
   },
   {
-    id: 2,
-    text: lorem,
+    id: uuid(),
+    text: "After unveiling of characters, big puzzle will be started and betting of participation in puzzling at least 1 NFT at BROTHERHOOD Project.",
   },
   {
-    id: 3,
-    text: lorem,
+    id: uuid(),
+    text: "Project contains very special  20 numbers from BROTHERHOOD group that two of NFTs divided between 2 holders into Airdrop.",
   },
   {
-    id: 4,
-    text: lorem,
+    id: uuid(),
+    text: "To set up BROTHERHOOD club in Metaverse and Holding mental & business seminars with prominent celebrities in Metaverse who NFT holders can be attended to this seminar free of cost.",
   },
   {
-    id: 5,
-    text: lorem,
+    id: uuid(),
+    text: " Launching recreational and sports club in Dubai and using of these services for free.",
+  },
+
+  {
+    id: uuid(),
+    text: "%50 of net profit of recreational and sports club income in Dubai is also paid to wallet upon the request of holder between BROTHERHOOD holders via once every three months into MATIC, ETH , BNB.",
   },
   {
-    id: 6,
-    text: lorem,
+    id: uuid(),
+    text: "Every NFT for receiving interest is counted one share.",
   },
   {
-    id: 7,
-    text: lorem,
+    id: uuid(),
+    text: "To set up BROTHERHOOD manufacturing clothes & accessories line.",
+  },
+  {
+    id: uuid(),
+    text: "Creating second phase of BROTHERHOOD and story continuation is represented in characters via 3D that BROTHERHOOD holders in phase 1 have in phase 2 buying priority And will be located via default in white list.",
+  },
+];
+export const sliderData = [
+  {
+    id: uuid(),
+    text: "Company condition in BROTHERHOOD great puzzle having at least one number from NFT of BROTHERHOOD.",
+  },
+  {
+    id: uuid(),
+    text: "Next competition will be started after revealing of NFTs ",
+  },
+  {
+    id: uuid(),
+    text: "During the 60 days, a puzzle will be introduced in Discord.",
+  },
+  {
+    id: uuid(),
+    text: "Competition consists of 20 puzzles that the first 19 from puzzles have each 10 points and the last puzzle is with 50 points.",
+  },
+  {
+    id: uuid(),
+    text: "The puzzles answers have specially concealed in 500 numbers and each of NFTs have a certain and accurate code.",
+  },
+  {
+    id: uuid(),
+    text: "When a person finds the answer in NFT, that's enough enter related code to NFT in the specified part.",
+  },
+  {
+    id: uuid(),
+    text: "Note that time to answer to riddle is until before considering the next puzzle and each person has a permission to record 1 answer for each puzzle.",
+  },
+  {
+    id: uuid(),
+    text: "Person who obtains the most points after finishing the last puzzle, will be won in BROTHERHOOD treasure.",
+  },
+  {
+    id: uuid(),
+    text: "If several people share the highest score, it will be lottery among them and each person that has the number of NFTs, there are more chanses to win ( the chance winning of X numbers of NFTs ).",
   },
 ];
 

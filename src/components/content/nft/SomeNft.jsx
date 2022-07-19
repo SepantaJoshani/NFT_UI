@@ -9,7 +9,7 @@ import { CardsWrapper } from "./SomeNft.styled";
 const SomeNft = () => {
   return (
     <>
-      <Typography variant="h2" textAlign="center">
+      <Typography variant="h2" sx={{mb:3}} textAlign="center">
         NFT
       </Typography>
       <CardsWrapper>

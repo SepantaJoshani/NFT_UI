@@ -15,12 +15,7 @@ const Story = () => {
       <Typography
         variant="body1"
         sx={{
-          xs: {
-            textAlign: "center",
-          },
-          md: {
-            textAlign: "left",
-          },
+          textAlign:'center'
         }}
       >
         {!smDown ? DUMMY_TEXT.substring(0, 600) : DUMMY_TEXT.substring(0, 200)}

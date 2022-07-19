@@ -10,7 +10,7 @@ import { teamData } from "../../../../data/index";
 const Team = () => {
   return (
     <>
-      <Typography variant="h2" textAlign="center">
+      <Typography sx={{mb:3}} variant="h2" textAlign="center">
         TEAM
       </Typography>
       <CardsWrapper>

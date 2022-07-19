@@ -34,11 +34,11 @@ const Hero = () => {
         <NumberValue>{number}/7654</NumberValue>
         <LastLine>
           <NumsContainer>
-            <NumBtn onClick={() => setNumber((prev) => prev + 1)}>
+            <NumBtn disabled={number>=3} onClick={() => setNumber((prev) => prev + 1)}>
               <img src={Plus} alt="plus" />
             </NumBtn>
             <NumValue>{number}</NumValue>
-            <NumBtn onClick={() => setNumber((prev) => prev - 1)}>
+            <NumBtn disabled={number===0} onClick={() => setNumber((prev) => prev - 1)}>
               <img src={Minus} alt="minus" />
             </NumBtn>
           </NumsContainer>
