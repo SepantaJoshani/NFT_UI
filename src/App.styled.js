@@ -41,11 +41,7 @@ export const StoryWrapper = styled.section`
     margin-top: 2rem;
     width: 90%;
   }
-  /* @media (min-width: 1024px) {
-    margin: 0 auto;
-    margin-top: 2rem;
-    width: 90%;
-  } */
+
 `;
 
 export const TimeLineWrapper = styled(Box)`
@@ -74,9 +70,16 @@ export const TreasureWrapper = styled.section`
 
 export const MysteryWrapper = styled.section`
   background-color: #555555;
-  padding: 1rem 2.5rem;
+  padding: 0rem 2.5rem;
+  padding-bottom: 1rem;
   position: relative;
+  @media (min-width: 1024px) {
+    padding-bottom: 2.5rem;
+    
+  }
+
   ${MarginTop}
+  
 `;
 
 export const TeamWrapper = styled.section`

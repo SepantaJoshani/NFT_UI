@@ -1,35 +1,16 @@
 import styled from "@emotion/styled";
 
 export const Paragraph = styled.p`
-  margin: 1.3rem 0;
+  margin: 0.2rem 0;
   font-size: 0.8rem;
+  text-align: center;
   @media (min-width: 768px) {
     font-size: 1rem;
+    margin: 1rem 0;
   }
   @media (min-width: 1280px) {
     font-size: 1.2rem;
-  }
-`;
-
-export const TreasureWrapper = styled.div`
-  width: 4.5rem;
-  height: 4.5rem;
-  position: absolute;
-  right: -1rem;
-  bottom: -1.8rem;
-
-  @media (min-width: 768px) {
-    width: 5.5rem;
-    height: 5.5rem;
-  }
-  @media (min-width: 768px) {
-    width: 7.5rem;
-    height: 7.5rem;
-    right: -2rem;
-    bottom: -1.8rem;
-  }
-  @media (max-width: 374px) {
-    display: none;
+    margin: 2rem 0;
   }
 `;
 
@@ -93,5 +74,63 @@ export const SubmitBtn = styled.button`
   @media (min-width: 1024px) {
     padding: 1rem 3rem;
     font-size: 1.4rem;
+  }
+`;
+
+export const TreasureWrapper = styled.div`
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  right: -1rem;
+  bottom: -1.8rem;
+
+  @media (min-width: 768px) {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  @media (min-width: 1024px) {
+    width: 6.5rem;
+    height: 6.5rem;
+    right: -2rem;
+    bottom: -1.8rem;
+  }
+  @media (min-width: 1280px) {
+    width: 7.5rem;
+    height: 7.5rem;
+    right: -2rem;
+    bottom: -1.8rem;
+  }
+
+  @media (max-width: 424px) {
+    width: 4rem;
+    height: 4rem;
+  }
+  @media (max-width: 374px) {
+    display: none;
+  }
+`;
+
+export const HatWrapper = styled.div`
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 0rem;
+  top: -1.8rem;
+
+  @media (min-width: 768px) {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  @media (min-width: 1280px) {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  @media (max-width: 374px) {
+    display: none;
   }
 `;

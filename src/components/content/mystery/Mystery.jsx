@@ -7,6 +7,7 @@ import {
   StyledInput,
   SubmitBtn,
   TreasureWrapper,
+  HatWrapper
 } from "./Mystery.styled";
 const Mystery = () => {
   return (
@@ -25,8 +26,11 @@ const Mystery = () => {
         <SubmitBtn>SEND</SubmitBtn>
       </FormWrapper>
       <TreasureWrapper>
-        <img width="100%" height="100%" src={TreasureBox} alt="" />
+        <img width="100%" height="100%" src={TreasureBox} alt="box" />
       </TreasureWrapper>
+      <HatWrapper>
+        <img width="100%" height="100%" src={Hat} alt="hat" />
+      </HatWrapper>
     </>
   );
 };
