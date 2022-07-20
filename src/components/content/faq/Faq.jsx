@@ -4,14 +4,15 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import PlusIcon from "../../../assets/plus.svg";
-import { timelineData } from "../../../../data/index";
+import { faqData, } from "../../../../data/index";
+
 const Faq = () => {
   return (
     <>
       <Typography variant="h2" fontWeight="bold" textAlign="center">
         FAQ
       </Typography>
-      {timelineData.map(({ id, text }, i) => (
+      {faqData.map(({ id, question, answer }, i) => (
         <Accordion
           key={id}
           sx={{
@@ -37,16 +38,10 @@ const Faq = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="body2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </Typography>
+            <Typography variant="body2">{question}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
-            </Typography>
+            <Typography>{answer}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}
