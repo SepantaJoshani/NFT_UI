@@ -2,8 +2,8 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-const DUMMY_TEXT =
-  "      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam. Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit amet est placerat in egestas erat. Nisi vitae suscipit tellus mauris a diam maecenas sed. Placerat duis ultricies lacus sed turpis tincidunt id aliquet.";
+const StoryTxt =
+  "      Many people get stuck in everyday life and find themselves stuck in another life and it is not the life they wanted. Brotherhood gave a chance to those who wanted to turn the page of life in their favor. They went to the beautiful and strange island of Brother hood were invited. They were supposed to get training there and change their lifestyle to achieve their goals. They are going to become multi-dimensional people with the help of Brotherhood and change everything. Be with them on the path of becoming multi-dimensional.";
 
 const Story = () => {
   const smDown = useMediaQuery("(max-width:480px)");
@@ -13,12 +13,12 @@ const Story = () => {
         Story
       </Typography>
       <Typography
-        variant="body1"
+        variant="body2"
         sx={{
-          textAlign:'center'
+          textAlign: "center",
         }}
       >
-        {!smDown ? DUMMY_TEXT.substring(0, 600) : DUMMY_TEXT.substring(0, 200)}
+        {StoryTxt}
       </Typography>
     </>
   );

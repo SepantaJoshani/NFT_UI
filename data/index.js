@@ -20,7 +20,7 @@ export const menuOptions = [
   { id: uuid(), content: "Road Map", href: "#road-map" },
   { id: uuid(), content: "Treasure Map", href: "#treasure-map" },
   { id: uuid(), content: "Mystery", href: "#mystery" },
-  { id: uuid(), content: "Term", href: "#term" },
+  { id: uuid(), content: "Term", href: "#team" },
   { id: uuid(), content: "Faq", href: "#faq" },
 ];
 
@@ -98,10 +98,6 @@ export const sliderData = [
     id: uuid(),
     text: "Person who obtains the most points after finishing the last puzzle, will be won in BROTHERHOOD treasure.",
   },
-  {
-    id: uuid(),
-    text: "If several people share the highest score, it will be lottery among them and each person that has the number of NFTs, there are more chanses to win ( the chance winning of X numbers of NFTs ).",
-  },
 ];
 
 export const teamData = [
@@ -111,7 +107,7 @@ export const teamData = [
   { id: uuid(), name: "Telma", image: GirlWithGlasses },
   { id: uuid(), name: "Mogimog", image: CigaretteGuy },
   { id: uuid(), name: "Last Satoshi", image: MathGuy },
-  { id: uuid(), name: "Mr Nobody", image: CoolGuy },
+  { id: uuid(), name: "Mojimj", image: CoolGuy },
 ];
 export const nftData = [
   { id: uuid(), name: "Brother Hood #985", eth: 0, image: HelmetGuy },
@@ -120,4 +116,51 @@ export const nftData = [
   { id: uuid(), name: "Brother Hood #985", eth: 0, image: GrayGuy },
   { id: uuid(), name: "Brother Hood #985", eth: 0, image: GreenBaseBall },
   { id: uuid(), name: "Brother Hood #985", eth: 0, image: BlondeGuy },
+];
+
+export const faqData = [
+  {
+    id: uuid(),
+    question: "1.How can i mint NFTs?",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+  },
+  {
+    id: uuid(),
+    question: "2.Which blockchain is supported?",
+    answer: "Brotherhood will be on the Ethereum blockchain.",
+  },
+  {
+    id: uuid(),
+    question: "3.Which wallet should I use?  ",
+    answer: "As of now we suggest MetaMask.",
+  },
+  {
+    id: uuid(),
+    question: "4.How many can I mint?",
+    answer: "Max of 3 per transaction.",
+  },
+  {
+    id: uuid(),
+    question: "5.What happens if the scores of several people are equal? ",
+    answer:
+      "A lottery will be held and the person who has more nfts has a higher chance of winning.",
+  },
+  {
+    id: uuid(),
+    question: "6.Where to send the answer and code? ",
+    answer: "You can send the puzzle section of the site.",
+  },
+  {
+    id: uuid(),
+    question: "7.Where should we find the NFT code? ",
+    answer:
+      "There is a section of the site with 500 characters, from which you can find the answer and send the NFT code.",
+  },
+  {
+    id: uuid(),
+    question: "8.Can we sell NFTs after minting in Opensea?",
+    answer:
+      "Yes, you can sell it in Opensea at a higher price and make a profit.",
+  },
 ];

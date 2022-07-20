@@ -14,13 +14,16 @@ export default SingleSlide;
 
 const StyledSlide = styled.article`
   max-width: 160px;
-  min-height: 8.3rem;
+  min-height: 6rem;
   background-image: linear-gradient(#000000 0%, #545454 100%);
   border-top: 2px solid #fdd54b;
   padding: 0.5rem;
 
   @media (min-width: 640px) {
     min-width: 13rem;
+  }
+  @media (min-width: 640px) {
+    min-height: 6.5rem;
   }
   @media (min-width: 840px) {
     min-width: 14rem;

@@ -35,13 +35,13 @@ const App = () => {
         <TimeLineWrapper component="section" id="road-map">
           <AlternateTimeline />
         </TimeLineWrapper>
-        <TreasureWrapper>
+        <TreasureWrapper id='treasure-map'>
           <Treasure />
         </TreasureWrapper>
-        <MysteryWrapper>
+        <MysteryWrapper id="mystery">
           <Mystery />
         </MysteryWrapper>
-        <TeamWrapper>
+        <TeamWrapper id="team">
           <Team />
         </TeamWrapper>
         <NftWrapper>
