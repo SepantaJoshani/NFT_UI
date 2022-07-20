@@ -121,45 +121,45 @@ export const nftData = [
 export const faqData = [
   {
     id: uuid(),
-    question: "1.How can i mint NFTs?",
+    question: "How can i mint NFTs?",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
   {
     id: uuid(),
-    question: "2.Which blockchain is supported?",
+    question: "Which blockchain is supported?",
     answer: "Brotherhood will be on the Ethereum blockchain.",
   },
   {
     id: uuid(),
-    question: "3.Which wallet should I use?  ",
+    question: "Which wallet should I use?  ",
     answer: "As of now we suggest MetaMask.",
   },
   {
     id: uuid(),
-    question: "4.How many can I mint?",
+    question: "How many can I mint?",
     answer: "Max of 3 per transaction.",
   },
   {
     id: uuid(),
-    question: "5.What happens if the scores of several people are equal? ",
+    question: "What happens if the scores of several people are equal? ",
     answer:
       "A lottery will be held and the person who has more nfts has a higher chance of winning.",
   },
   {
     id: uuid(),
-    question: "6.Where to send the answer and code? ",
+    question: "Where to send the answer and code? ",
     answer: "You can send the puzzle section of the site.",
   },
   {
     id: uuid(),
-    question: "7.Where should we find the NFT code? ",
+    question: "Where should we find the NFT code? ",
     answer:
       "There is a section of the site with 500 characters, from which you can find the answer and send the NFT code.",
   },
   {
     id: uuid(),
-    question: "8.Can we sell NFTs after minting in Opensea?",
+    question: "Can we sell NFTs after minting in Opensea?",
     answer:
       "Yes, you can sell it in Opensea at a higher price and make a profit.",
   },

@@ -41,7 +41,7 @@ const Faq = () => {
             <Typography variant="body2">{question}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{answer}</Typography>
+            <Typography variant="body2">{answer}</Typography>
           </AccordionDetails>
         </Accordion>
       ))}

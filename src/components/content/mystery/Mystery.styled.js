@@ -2,14 +2,14 @@ import styled from "@emotion/styled";
 
 export const Paragraph = styled.p`
   margin: 0.2rem 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   @media (min-width: 768px) {
     font-size: 1rem;
     margin: 1rem 0;
   }
   @media (min-width: 1280px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 2rem 0;
   }
 `;
@@ -111,15 +111,15 @@ export const TreasureWrapper = styled.div`
 `;
 
 export const HatWrapper = styled.div`
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
   position: absolute;
   left: 0rem;
   top: -1.8rem;
 
   @media (min-width: 768px) {
-    width: 5.5rem;
-    height: 5.5rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   
