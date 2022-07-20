@@ -23,7 +23,7 @@ const SomeNft = () => {
             />
             <CardContent sx={{ px: 1, "&.MuiCardContent-root": { pb: 1 } }}>
               <p>{name}</p>
-              <p className="second-p">{eth}/12 ETH</p>
+              {/* <p className="second-p">{eth}/12 ETH</p> */}
             </CardContent>
           </Card>
         ))}
